@@ -1,4 +1,13 @@
 .tree-box {
-    width: 300px;
+    width: 400px;
     border: solid 1px #000;
+}
+
+.nav-container {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.nav-container li {
+    margin: 0 20px;
 }

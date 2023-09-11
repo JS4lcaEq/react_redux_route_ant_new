@@ -1,5 +1,8 @@
 import { DatePicker } from 'antd';
 import { Tree } from 'antd';
+import locale from 'antd/es/date-picker/locale/ru_RU';
+
+import 'dayjs/locale/ru';
 
 export default function Ant() {
     const dig = (path = '0', level = 3) => {
@@ -23,10 +26,10 @@ export default function Ant() {
         <>
             <h2>Ant</h2>
             <div>
-                <DatePicker />
+                <DatePicker locale={locale} />
             </div>
             <div>
-                <Tree treeData={treeData} height={233} defaultExpandAll className="tree-box" />
+                <Tree treeData={treeData} height={444} defaultExpandAll className="tree-box" />
             </div>
         </>
 
